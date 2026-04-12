@@ -1,11 +1,23 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Faggruppe - KI fra forsteprinsipp
 
-To start the slide show:
+Slidev-presentasjon for den andre samlingen i faggruppen om KI fra forsteprinsipp. Basert pa *Hands-On Large Language Models* (kapittel 1-2): Language AI, tokens og embeddings. Lysbildene er pa norsk og ment for kolleger/internt bruk og andre GitHub-besokende. Oppdater denne oppsummeringen hvis innholdet i `slides.md` endres.
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+## Quick start
 
-Edit the [slides.md](./slides.md) to see the changes.
+Forutsetning: pnpm (anbefalt) eller npm
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
+```bash
+pnpm install
+pnpm dev
+```
+
+Apne http://localhost:3030
+
+Rediger `slides.md` for a oppdatere innholdet.
+
+## Prosjektstruktur
+
+- `slides.md` - hovedinnhold for presentasjonen
+- `components/` - tilpassede Vue-komponenter
+- `snippets/` - kodesnutter brukt i lysbilder
+- `pages/` - importerte slides
