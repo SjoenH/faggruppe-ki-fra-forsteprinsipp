@@ -112,10 +112,7 @@ Hvorfor store? Samme grunnprinsipp som mindre modeller, men i en helt annen skal
 -->
 
 ---
-
 layout: section
----
-
 # Kapittel 1
 
 ## Historikk og arkitekturer
@@ -235,8 +232,6 @@ Det viktige poenget: dette skjedde veldig fort. Fra femtitallet til ChatGPT er i
 
 ---
 layout: two-cols
----
-
 # Fra Bag-of-Words til Embeddings
 
 ::left::
@@ -280,8 +275,6 @@ Men — word2vec gir ett og samme svar uansett kontekst. Hvert ord har én fast 
 
 ---
 layout: two-cols
----
-
 # Attention & Transformer
 
 ::left::
@@ -321,8 +314,6 @@ Transformer er arkitekturen bak alle moderne store språkmodeller. BERT, GPT, Ll
 
 ---
 layout: two-cols
----
-
 # To Modellfamilier
 
 ::left::
@@ -617,10 +608,7 @@ Hvilke av disse bruker dere mest i hverdagen?
 -->
 
 ---
-
 layout: two-cols
----
-
 # Grensesnitt mot store språkmodeller
 
 ::left::
@@ -656,8 +644,6 @@ For norske virksomheter med krav om databehandling innenfor EØS, er åpne model
 
 ---
 layout: section
----
-
 # Pause ☕
 
 ### 5 minutter
@@ -667,8 +653,6 @@ Da tar vi en kort pause. Fem minutter — strekk på beina og hent kaffe.
 
 ---
 layout: section
----
-
 # Kapittel 2
 
 ## Tokens & Embeddings
