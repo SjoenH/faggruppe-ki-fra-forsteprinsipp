@@ -28,12 +28,14 @@ Scope: Public-facing README update
 ### 1) Title and overview
 - Title: "Faggruppe - KI fra forsteprinsipp"
 - Summary (2-3 sentences):
-  - This repo hosts the Slidev presentation for session 2.
+  - This repo hosts the Slidev presentation for the second meetup in the series.
   - Based on Hands-On Large Language Models (Ch. 1-2): Language AI, tokens, embeddings.
   - Audience: internal faggruppe/colleagues; slides are in Norwegian.
+  - Note: summary should be updated if slides.md scope changes.
 
 ### 2) Quick start
 Commands:
+- Prereq: pnpm (recommended) or npm
 - pnpm install
 - pnpm dev
 - open http://localhost:3030
