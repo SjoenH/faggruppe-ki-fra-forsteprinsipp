@@ -1,0 +1,22 @@
+{
+  "version": "0.2",
+  "language": "en,nb",
+  "dictionaries": [
+    "en-gb",
+    "nb-no"
+  ],
+  "languageSettings": [
+    {
+      "languageId": "markdown",
+      "language": "en,nb"
+    },
+    {
+      "languageId": "mdx",
+      "language": "en,nb"
+    }
+  ],
+  "files": [
+    "slides.md",
+    "**/*.md"
+  ]
+}

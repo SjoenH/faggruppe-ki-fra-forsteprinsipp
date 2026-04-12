@@ -1,0 +1,22 @@
+{
+  "name": "faggruppe-ki-2026",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "cspell": "cspell --config cspell.json",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.14.2",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "@cspell/dict-en-gb": "^5.0.27",
+    "@cspell/dict-nb-no": "^2.0.6",
+    "cspell": "^10.0.0"
+  }
+}
