@@ -1,6 +1,10 @@
 {
   "version": "0.2",
-  "language": "en,nb",
+  "import": [
+    "@cspell/dict-en-gb/cspell-ext.json",
+    "@cspell/dict-nb-no/cspell-ext.json"
+  ],
+  "language": "en-GB,nb-no",
   "dictionaries": [
     "en-gb",
     "nb-no"
@@ -8,12 +12,99 @@
   "languageSettings": [
     {
       "languageId": "markdown",
-      "language": "en,nb"
+      "locale": "nb-no,en-GB",
+      "dictionaries": [
+        "nb-no",
+        "en-gb"
+      ]
     },
     {
       "languageId": "mdx",
-      "language": "en,nb"
+      "locale": "nb-no,en-GB",
+      "dictionaries": [
+        "nb-no",
+        "en-gb"
+      ]
+    },
+    {
+      "languageId": "*",
+      "locale": "nb-no,en-GB",
+      "dictionaries": [
+        "nb-no",
+        "en-gb"
+      ]
     }
+  ],
+  "words": [
+    "Alammar",
+    "BERT",
+    "Faggruppe",
+    "Grootendorst",
+    "LLaMA",
+    "Mamba",
+    "Mikolov",
+    "O'Reilly",
+    "Pretraining",
+    "Phi",
+    "RWKV",
+    "Slidev",
+    "GPT",
+    "seriph",
+    "førsteprinsipp",
+    "word2vec",
+    "anbefalingssystemer",
+    "autoregressiv",
+    "autoregressivt",
+    "boken",
+    "femtitallet",
+    "fortrening",
+    "fortrenes",
+    "fortrener",
+    "Fortren",
+    "inputsekvensen",
+    "instruksjonsfølging",
+    "internettkorpus",
+    "kodesnutt",
+    "multimodale",
+    "naboer",
+    "ordforekomster",
+    "ordtellinger",
+    "Paperet",
+    "poenget",
+    "råtekst",
+    "rekurrens",
+    "rekurrente",
+    "representasjonsmodeller",
+    "Representasjonsmodeller",
+    "Sentimentanalyse",
+    "setningsembedding",
+    "setningsembeddings",
+    "Skalaen",
+    "skalaen",
+    "språkagnostisk",
+    "Språkagnostisk",
+    "Subord",
+    "temaer",
+    "tokenisering",
+    "Tokenisering",
+    "tokeniseres",
+    "tokenizeren",
+    "Treningsparadigmet",
+    "undergren",
+    "Vocab",
+    "æraen",
+    "apolog",
+    "izing",
+    "izer",
+    "pretrained",
+    "spamdeteksjon",
+    "modeling",
+    "Modeling",
+    "noen",
+    "Bidireksjonell",
+    "nevralt",
+    "finjusteringstilgang",
+    "Råbytes"
   ],
   "files": [
     "slides.md",
