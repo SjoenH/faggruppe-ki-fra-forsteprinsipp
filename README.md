@@ -2,6 +2,8 @@
 
 Slidev-presentasjon for den andre samlingen i faggruppen om KI fra forsteprinsipp. Basert pa *Hands-On Large Language Models* (kapittel 1-2): Language AI, tokens og embeddings. Lysbildene er pa norsk og ment for kolleger/internt bruk og andre GitHub-besokende. Oppdater denne oppsummeringen hvis innholdet i `slides.md` endres.
 
+Live slides: https://sjoenH.github.io/faggruppe-ki-fra-forsteprinsipp/
+
 ## Reading plan (Ch. 3-12) - 2026
 
 Cadence and format
