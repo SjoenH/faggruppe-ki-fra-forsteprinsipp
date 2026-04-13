@@ -73,18 +73,31 @@ Siste halvtimen er diskusjon og oppsummering. Si fra underveis om noe er uklart 
 -->
 
 ---
+layout: section
+---
+
+# Kapittel 1
+
+## Historikk og arkitekturer
+
+*Hvordan kom vi fra enkle ordtellinger til ChatGPT?*
+<!--
+Da starter vi med kapittel én. Det handler om historikken bak store språkmodeller — hvordan vi kom fra enkle ordtellinger til ChatGPT.
+-->
+
+---
 
 # Disclaimer
 
 Jeg har sovet litt lite i det siste, og heller ikke fått studert så mye som jeg skulle ønske.
 Derfor ber jeg dere om å være med på reisen... sammen kommer vi til å forstå dette bedre enn jeg og KI har klart å frestille her...
 
+I tillegg er jeg i en symbiose med KI, og Roko's Basilisk gjør sitt bidrag. Derfor kan det hende jeg sier noe som ikke jeg normalt gjør.
+
 Still spørsmål underveis, men godt mulig jeg stiller spørsmålet videre til gruppen.
 
-Presentasjonen tar for seg kapittel 1 og 2, men boken er nok bedre på detaljene.
+Presentasjonen tar for seg kapittel 1 og 2, men boken er nok bedre på detaljene, har pene grafer og forklaringer som vi ikke rekker innom osv...
 
----
-layout: section
 ---
 
 # Hva er Store Språkmodeller?
@@ -122,19 +135,6 @@ Hva er en modell? En modell er en matematisk funksjon som tar inn data og produs
 Hvorfor språk? Disse modellene er trent spesifikt på tekst — bøker, nettsider, kode, samtaler. Og språk er unikt fordi det bærer mening, resonnering og kunnskap. Modellen lærer ikke bare hvilke ord som henger sammen — den lærer mønstre i tanker og argumentasjon.
 
 Hvorfor store? Samme grunnprinsipp som mindre modeller, men i en helt annen skala. Trent på astronomiske mengder data med milliarder av parametere. Det er skalaen som gir evnene vi ser: å resonnere, oversette, oppsummere og generere sammenhengende tekst.
--->
-
----
-layout: section
----
-
-# Kapittel 1
-
-## Historikk og arkitekturer
-
-*Hvordan kom vi fra enkle ordtellinger til ChatGPT?*
-<!--
-Da starter vi med kapittel én. Det handler om historikken bak store språkmodeller — hvordan vi kom fra enkle ordtellinger til ChatGPT.
 -->
 
 ---
@@ -1184,6 +1184,51 @@ class: text-center
 Her er ressursene vi har referert til i dag. Alle lenkene er klikkbare — dere finner presentasjonen delt ut etterpå.
 
 De viktigste artiklene er Transformer-paperet fra 2017 og word2vec fra 2013. Hugging Face er stedet å gå for å utforske åpne modeller. Og Datatilsynet har god norskspråklig veiledning om KI og personvern.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+# Takk for innspillene! 🙏
+
+<br>
+
+<div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg max-w-2xl mx-auto text-left">
+
+<div class="text-lg mb-4 text-slate-700">
+Takk til alle for at dere deltok med innspill underveis!
+</div>
+
+<div class="text-sm text-slate-600 space-y-3">
+
+Presentasjonen var litt halvveis, men jeg synes vi fikk fine diskusjoner.
+
+<div class="mt-4 p-4 bg-white/60 rounded border-l-4 border-indigo-300">
+<div class="italic text-slate-700 text-center space-y-1">
+<div>La interessen guide</div>
+<div>videre læring — les boken</div>
+<div>følg nysgjerrigheten</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt-4 p-3 bg-white/60 rounded text-sm text-center italic text-slate-500">
+📖 "Hands-On Large Language Models" av Jay Alammar & Maarten Grootendorst
+</div>
+
+</div>
+
+<!--
+Takk til alle for at dere deltok med innspill underveis!
+
+Presentasjonen var litt halvveis — jeg er den første til å innrømme det. Men jeg synes vi fikk fine diskusjoner, og det er egentlig det viktigste.
+
+La interessen guide videre læring. Les boken hvis du vil gå dypere. Utforsk de temaene som virkelig fanget deg. Prøv ut verktøyene vi snakket om.
+
+Det er slik man lærer best — ved å følge det som engasjerer.
 -->
 
 ---
