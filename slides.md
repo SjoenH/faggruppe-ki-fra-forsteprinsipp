@@ -1274,3 +1274,45 @@ Spørsmålene er: Hvilket verktøy bruker du mest? Hva bruker du det til i jobb?
 
 Målet er å lære av hverandre — det er alltid noen som har funnet smarte løsninger ingen andre vet om.
 -->
+
+---
+layout: center
+class: text-center
+---
+
+# 🎤 Henrik's rant corner
+
+<br>
+
+<div class="p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-lg max-w-2xl mx-auto text-left border-2 border-orange-300">
+
+<div class="text-2xl mb-4 text-center">🔥 Uken som var 🔥</div>
+
+<div class="text-sm text-slate-700 space-y-3">
+
+**Henrik får 5 minutter til å:**
+- Dele sine tanker om den siste uken
+- Fortelle om noe som frustrerte eller inspirerte
+- Reflektere over noe han lærte
+- Rant fritt om hva som helst KI-relatert (eller ikke)
+
+<div class="mt-4 p-3 bg-white/50 rounded text-xs italic text-slate-600">
+⏱️ Ingen censur. Ingen struktur. Bare Henrik og mikrofonen.
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="text-sm text-slate-400">
+💡 Tips til publikum: Dere kan stille oppfølgingsspørsmål etterpå
+</div>
+<!--
+Nå har Henrik fått fem minutter til å rant fritt om uken sin.
+
+Det kan være noe som frustrerte, noe som inspirerte, noe han lærte — eller bare noe som har ligget og kokt. Ingen struktur, ingen begrensninger. Bare Henrik og mikrofonen.
+
+Dette er hans tid.
+-->
