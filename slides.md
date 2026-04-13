@@ -74,6 +74,19 @@ Siste halvtimen er diskusjon og oppsummering. Si fra underveis om noe er uklart 
 
 ---
 
+# Disclaimer
+
+Jeg har sovet litt lite i det siste, og heller ikke fått studert så mye som jeg skulle ønske.
+Derfor ber jeg dere om å være med på reisen... sammen kommer vi til å forstå dette bedre enn enkeltvis.
+
+Still spørsmål underveis, men godt mulig jeg stiller spørsmålet videre til gruppen.
+
+Presentasjonen tar for seg kapittel 1 og 2, men boken er nok bedre på detaljene.
+
+---
+layout: section
+---
+
 # Hva er Store Språkmodeller?
 
 <div class="grid grid-cols-3 gap-4 mt-5 text-sm">
@@ -145,6 +158,15 @@ Da starter vi med kapittel én. Det handler om historikken bak store språkmodel
 <div class="mt-4 p-3 bg-slate-100 rounded text-sm">
   Boka bruker <em>Language AI</em> som ramme og viser hvordan flere teknikker spiller sammen.
 </div>
+<!--
+Nå skal vi definere noen viktige begreper.
+
+Language AI — eller språkbasert kunstig intelligens — er egentlig et bredere felt enn bare store språkmodeller. Det omfatter alle teknologier som forstår, prosesserer og genererer menneskelig språk.
+
+Og det er viktig å merke seg: Language AI er mer enn LLM. Det inkluderer også søkesystemer, embeddings, og til og med klassiske metoder som bag-of-words som vi skal se på om litt.
+
+Boka bruker begrepet Language AI som ramme nettopp fordi disse teknikkene ofte jobber sammen. En chatbot er ikke bare en LLM — den bruker også søk, retrieval og embeddings under panseret.
+-->
 
 ---
 
@@ -167,6 +189,15 @@ Da starter vi med kapittel én. Det handler om historikken bak store språkmodel
 <div class="mt-4 p-3 bg-amber-50 rounded text-sm">
   LLM er et flytende begrep – viktigere å forstå arkitekturen enn etiketten.
 </div>
+<!--
+Så hva er egentlig en stor språkmodell — en LLM?
+
+Og her støter vi på et problem: begrepet brukes litt ulikt.
+
+I dagligtalen bruker folk "LLM" om generative modeller som GPT — de som skriver tekst. Men boka vi leser bruker en bredere definisjon. De inkluderer også modeller som BERT, som er encoder-only og fokuserer på forståelse fremfor generering.
+
+Det er viktig å vite at LLM er et flytende begrep. Det endrer seg over tid. Det viktigste er ikke hva vi kaller det — det viktigste er å forstå hvordan arkitekturen fungerer og hva den er god til.
+-->
 
 ---
 
@@ -376,6 +407,15 @@ Enkel huskeregel: BERT leser og forstår, GPT skriver og genererer.
 </div>
 
 </div>
+<!--
+Generative språkmodeller — som GPT — er i bunn og grunn completion models. De kompletterer teksten du gir dem.
+
+Du gir den starten på en setning, og den fullfører. Token for token. Det er grunnmekanismen.
+
+Men ChatGPT fungerer jo som en chatbot? Ja — fordi modellen er finjustert til å følge instruksjoner. Den er trent til å svare på spørsmål, ikke bare komplettere setninger.
+
+Så når du skriver "Hva er hovedstaden i Norge?", ser modellen det som starten på en samtale og kompletterer med et svar. Under panseret er det fortsatt completion — bare trent til å gjøre det på en nyttig måte.
+-->
 
 ---
 
@@ -388,6 +428,17 @@ Enkel huskeregel: BERT leser og forstår, GPT skriver og genererer.
 <div class="p-4 bg-amber-50 rounded text-sm mt-3">
   Pga. autoregressiv generering utvides konteksten mens modellen produserer nye tokens.
 </div>
+<!--
+Context window — eller kontekstvindu — er et kritisk begrep.
+
+Det er ganske enkelt det maksimale antallet tokens modellen kan se på én gang. Alt utenfor det vinduet er usynlig for modellen.
+
+Når GPT-4 har et kontekstvindu på 128 000 tokens, betyr det at den kan holde omtrent 96 000 ord i minnet samtidig. Det er mye — men det er fortsatt en grense.
+
+Og fordi generative modeller jobber autoregressivt — det vil si at de genererer én token om gangen og bruker den som input til neste — så vokser konteksten underveis. Hver gang modellen skriver et nytt ord, legges det til i konteksten.
+
+Det er derfor lange samtaler med ChatGPT kan bli trege eller til og med miste tråden. Konteksten vokser og vokser til den treffer taket.
+-->
 
 ---
 layout: center
@@ -446,6 +497,19 @@ Bruk fem minutter. Jeg kaller inn igjen.
 <div class="mt-4 p-3 bg-slate-100 rounded text-sm">
   Resultatet er en <em>vektorrepresentasjon</em> av teksten, men uten rekkefølge og kontekst.
 </div>
+<!--
+La oss se mer detaljert på hvordan bag-of-words fungerer, steg for steg.
+
+Først tokenisering: vi deler teksten opp i enkeltord. Ofte ved å splitte på mellomrom.
+
+Deretter lager vi et vokabular — en liste over alle unike ord som finnes i tekstene våre.
+
+Til slutt teller vi hvor mange ganger hvert ord forekommer i hver tekst, og det gir oss en vektor — en tallrepresentasjon.
+
+Problemet er at denne vektoren ikke inneholder noen informasjon om rekkefølge eller kontekst. "Hunden bet mannen" og "Mannen bet hunden" gir nøyaktig samme resultat.
+
+Det er derfor vi trenger bedre metoder.
+-->
 
 ---
 
@@ -464,6 +528,17 @@ Bruk fem minutter. Jeg kaller inn igjen.
 </div>
 
 </div>
+<!--
+word2vec introduserte det vi kaller dense embeddings — tette vektor-representasjoner.
+
+En embedding er en vektor som faktisk forsøker å fange betydningen av et ord, ikke bare telle det.
+
+word2vec lærer dette ved å trene et nevralt nettverk til å predikere om to ord er naboer i en setning. Gjennom millioner av slike prediksjoner lærer modellen hvilke ord som hører sammen.
+
+Treningen skjer i et nevralt nettverk med mange parametere — weights som justeres gradvis. Embeddings oppdateres slik at ord med lik betydning blir nære hverandre i vektorrommet.
+
+Det klassiske eksemplet er king minus man pluss woman er omtrent lik queen. Modellen har aldri fått beskjed om kjønn — den lærte det bare av teksten.
+-->
 
 ---
 
@@ -484,6 +559,19 @@ Bruk fem minutter. Jeg kaller inn igjen.
 <div class="mt-4 p-3 bg-blue-50 rounded text-sm">
   <strong>Attention</strong> lar modellen fokusere på relevante deler av input under oversettelse.
 </div>
+<!--
+I 2014 kom en viktig innovasjon: RNN encoder-decoder med attention.
+
+Arkitekturen består av to deler. Encoderen leser hele inputsekvensen — for eksempel en setning på engelsk — og lager en embedding av hele konteksten.
+
+Decoderen tar den embedden og genererer output token for token — for eksempel en oversettelse til fransk.
+
+Attention-mekanismen var det virkelig nye. Den lar modellen fokusere på ulike deler av input mens den skriver output. Når modellen oversetter "the cat", ser den tilbake på de engelske ordene "the" og "cat" — ikke på hele setningen.
+
+Dette var et gjennombrudd, men det hadde en stor begrensning: RNN-er må prosessere tekst sekvensielt, ord for ord. Det er tregt.
+
+Transformer-arkitekturen som kom i 2017 løste det problemet.
+-->
 
 ---
 
@@ -557,6 +645,15 @@ Forskjellen fra tradisjonell maskinlæring er stor. Før trente man én modell f
 <div class="mt-4 p-3 bg-amber-50 rounded text-sm">
   Nye arkitekturer dukker opp: <strong>Mamba</strong> og <strong>RWKV</strong> utfordrer Transformer på visse egenskaper.
 </div>
+<!--
+2023 blir husket som året generativ AI gikk mainstream.
+
+Det er viktig å skille mellom produkt og modell. ChatGPT er et produkt fra OpenAI. Modellen under panseret var først GPT-3.5, senere GPT-4. Produktet pakker modellen inn i et grensesnitt folk faktisk kan bruke.
+
+Etter ChatGPT kom det en strøm av både åpne og proprietære modeller. Llama fra Meta, Mistral fra Frankrike, Claude fra Anthropic. Foundation models ble lansert i raskt tempo, og de kunne alle finjusteres for spesifikke oppgaver.
+
+Og feltet står ikke stille. Nye arkitekturer som Mamba og RWKV utfordrer Transformer på visse egenskaper — spesielt hastighet og minnebruk. Transformer er ikke nødvendigvis det endelige svaret.
+-->
 
 ---
 
@@ -689,6 +786,15 @@ Dette er de to grunnleggende byggesteinene som gjør at en datamaskin kan jobbe 
 <div class="p-4 bg-blue-50 rounded text-sm mt-3">
   Tokens → embeddings → modellens lag → nye tokens.
 </div>
+<!--
+Nå går vi over til kapittel to: tokens og embeddings. Dette er grunnmuren i alt vi har snakket om til nå.
+
+En stor språkmodell ser aldri tekst direkte. Den ser bare tall. Tokens og embeddings er oversettelsen mellom menneske og maskin.
+
+Prosessen er ganske enkel: tekst deles opp i tokens, tokens gjøres om til embeddings — tallvektorer — og så prosesseres de gjennom modellens lag. Resultatet er nye tokens som igjen gjøres om til tekst.
+
+Uten tokens og embeddings ville ikke språkmodeller fungert. Det er fundamentalt.
+-->
 
 ---
 
@@ -775,6 +881,19 @@ Subord, eller BPE, er den mest brukte metoden — brukt av både GPT og BERT.
 <div class="mt-4 p-3 bg-slate-100 rounded text-sm">
   <code>decode()</code> mapper token IDs tilbake til lesbar tekst.
 </div>
+<!--
+La oss se på hvordan tekst faktisk blir til input for modellen.
+
+Første steg: du skriver en prompt — ren tekst.
+
+Andre steg: tokenizeren deler opp teksten i tokens og gir hver token et unikt ID-nummer. Dette er token IDs.
+
+Tredje steg: disse ID-ene — input_ids — er det modellen faktisk mottar. Modellen ser aldri teksten din direkte, bare tallene.
+
+Og på vei ut bruker vi decode-funksjonen til å oversette token IDs tilbake til lesbar tekst igjen.
+
+Så både inn og ut går teksten gjennom tokenizeren.
+-->
 
 ---
 
@@ -799,6 +918,19 @@ Subord, eller BPE, er den mest brukte metoden — brukt av både GPT og BERT.
 </div>
 
 </div>
+<!--
+Det finnes flere ulike måter å tokenisere på.
+
+Word tokens — hele ord. Enkelt, men problemet er at vokabularet blir veldig stort, og nye ord som ikke var i treningsdataen blir ukjente.
+
+Subword tokens — deler ord opp i biter. "apologizing" blir "apolog" og "izing". Dette er den vanligste metoden i dag — brukt av både GPT og BERT. Den balanserer vokabularstørrelse mot fleksibilitet.
+
+Character tokens — hvert tegn blir ett token. Veldig lite vokabular, men sekvensene blir ekstremt lange.
+
+Byte tokens — jobber direkte med råbytes fra 0 til 255. Fullstendig språkagnostisk — håndterer emojis, kinesisk, kode, alt. Men også lange sekvenser.
+
+Subword er vinneren fordi den gir den beste balansen.
+-->
 
 ---
 
@@ -822,6 +954,17 @@ Subord, eller BPE, er den mest brukte metoden — brukt av både GPT og BERT.
 </div>
 
 </div>
+<!--
+Hvordan en tokenizer er designet påvirker modellen kraftig.
+
+Først: metoden. BPE — byte pair encoding — brukes av GPT. WordPiece brukes av BERT. De ligner, men kommer frem til litt ulike vokabularer.
+
+Andre: størrelsen på vokabularet og hvilke spesielle tokens som brukes. GPT-4 har et mye større vokabular enn GPT-2, og det gjør den mer effektiv.
+
+Tredje: hvilke data tokenizeren ble trent på. En tokenizer trent på engelsk vil være dårlig på norsk. En tokenizer trent på kode vil være dårlig på naturlig språk.
+
+Tokenizeren er ikke bare et verktøy — den er en del av modellen.
+-->
 
 ---
 
@@ -845,6 +988,17 @@ Subord, eller BPE, er den mest brukte metoden — brukt av både GPT og BERT.
 </div>
 
 </div>
+<!--
+La oss sammenligne noen tokenizere.
+
+BERT uncased — den konverterer alt til små bokstaver og kan miste newlines og emojis. Hvis den møter noe ukjent, returnerer den en [UNK]-token — "unknown".
+
+GPT-2 — den bevarer newlines og har byte-fallback. Hvis den møter noe ukjent, bryter den det ned til bytes. Ingenting går tapt.
+
+GPT-4 — den har tokens som er optimalisert for kode og whitespace. Det gjør den mye bedre på programmeringsoppgaver.
+
+Ulike tokenizere gir ulike styrker og svakheter.
+-->
 
 ---
 
@@ -859,6 +1013,19 @@ input_ids = tokenizer(prompt, return_tensors="pt").input_ids
 print(input_ids)
 print(tokenizer.decode(input_ids[0]))
 ```
+<!--
+Her er et lite kodeeksempel fra boka.
+
+Vi laster ned en tokenizer fra Hugging Face — i dette tilfellet for Phi-3-mini, en liten språkmodell fra Microsoft.
+
+Vi skriver en prompt: "Write an email apologizing..."
+
+Tokenizeren konverterer det til input_ids — en liste med tall.
+
+Og vi kan bruke decode til å oversette tilbake.
+
+Dette er grunnmønsteret for hvordan man jobber med tokens i praksis.
+-->
 
 ---
 layout: center
