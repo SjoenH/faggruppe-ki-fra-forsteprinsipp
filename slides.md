@@ -77,7 +77,7 @@ Siste halvtimen er diskusjon og oppsummering. Si fra underveis om noe er uklart 
 # Disclaimer
 
 Jeg har sovet litt lite i det siste, og heller ikke fått studert så mye som jeg skulle ønske.
-Derfor ber jeg dere om å være med på reisen... sammen kommer vi til å forstå dette bedre enn enkeltvis.
+Derfor ber jeg dere om å være med på reisen... sammen kommer vi til å forstå dette bedre enn jeg og KI har klart å frestille her...
 
 Still spørsmål underveis, men godt mulig jeg stiller spørsmålet videre til gruppen.
 
@@ -139,64 +139,43 @@ Da starter vi med kapittel én. Det handler om historikken bak store språkmodel
 
 ---
 
-# What is Language AI?
+# Language AI & LLM — viktige distinksjoner
 
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-
-<div class="p-4 bg-slate-50 rounded-lg border-l-4 border-slate-400">
-  <div class="font-bold mb-2">Definisjon</div>
-  <div class="text-slate-600">Language AI er en undergren av AI som fokuserer på å forstå, prosessere og generere menneskelig språk (ofte brukt synonymt med NLP).</div>
-</div>
 
 <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-  <div class="font-bold mb-2">Ikke bare LLM</div>
-  <div class="text-slate-600">Language AI inkluderer også retrieval-systemer, embeddings og klassiske modeller som bag-of-words. LLM er en (stor) del av helheten.</div>
+  <div class="font-bold mb-2">Language AI (det bredere feltet)</div>
+  <div class="text-slate-600">
+    Omfatter <strong>alle</strong> teknikker for å forstå og generere språk:<br>
+    • Retrieval-systemer<br>
+    • Embeddings<br>
+    • Klassiske metoder (bag-of-words)<br>
+    • LLMs
+  </div>
+</div>
+
+<div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-400">
+  <div class="font-bold mb-2">LLM (Large Language Model)</div>
+  <div class="text-slate-600">
+    <strong>Vanlig bruk:</strong> Generative modeller (GPT)<br>
+    <strong>Bokas bruk:</strong> Både encoder (BERT) og decoder (GPT)<br><br>
+    Flytende begrep — fokuser på arkitektur fremfor etikett
+  </div>
 </div>
 
 </div>
 
-<div class="mt-4 p-3 bg-slate-100 rounded text-sm">
-  Boka bruker <em>Language AI</em> som ramme og viser hvordan flere teknikker spiller sammen.
-</div>
-<!--
-Nå skal vi definere noen viktige begreper.
-
-Language AI — eller språkbasert kunstig intelligens — er egentlig et bredere felt enn bare store språkmodeller. Det omfatter alle teknologier som forstår, prosesserer og genererer menneskelig språk.
-
-Og det er viktig å merke seg: Language AI er mer enn LLM. Det inkluderer også søkesystemer, embeddings, og til og med klassiske metoder som bag-of-words som vi skal se på om litt.
-
-Boka bruker begrepet Language AI som ramme nettopp fordi disse teknikkene ofte jobber sammen. En chatbot er ikke bare en LLM — den bruker også søk, retrieval og embeddings under panseret.
--->
-
----
-
-# Hva er en LLM?
-
-<div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-
-<div class="p-4 bg-purple-50 rounded-lg">
-  <div class="font-bold mb-2">Vanlig bruk</div>
-  <div class="text-slate-600">LLM brukes ofte om store generative modeller (decoder-only) som GPT.</div>
-</div>
-
-<div class="p-4 bg-green-50 rounded-lg">
-  <div class="font-bold mb-2">Bokas definisjon</div>
-  <div class="text-slate-600">Boka bruker en bredere definisjon der både encoder-only (BERT) og decoder-only (GPT) inngår i LLM-familien.</div>
-</div>
-
-</div>
-
-<div class="mt-4 p-3 bg-amber-50 rounded text-sm">
-  LLM er et flytende begrep – viktigere å forstå arkitekturen enn etiketten.
+<div class="mt-4 p-3 bg-slate-100 rounded text-sm text-center">
+  Boka bruker <em>Language AI</em> som ramme fordi teknikker jobber sammen: En chatbot = LLM + RAG + embeddings + søk
 </div>
 <!--
-Så hva er egentlig en stor språkmodell — en LLM?
+La oss klargjøre noen begreper — uten å gjenta det vi allerede har sagt.
 
-Og her støter vi på et problem: begrepet brukes litt ulikt.
+Language AI er det bredere feltet. Det omfatter alle teknikker for å jobbe med språk — ikke bare store modeller. Retrieval, embeddings, klassiske metoder — alt sammen.
 
-I dagligtalen bruker folk "LLM" om generative modeller som GPT — de som skriver tekst. Men boka vi leser bruker en bredere definisjon. De inkluderer også modeller som BERT, som er encoder-only og fokuserer på forståelse fremfor generering.
+LLM — Large Language Model — brukes litt ulikt. I dagligtale: ofte bare generative modeller som GPT. I boka: både encoder-modeller som BERT og generative som GPT.
 
-Det er viktig å vite at LLM er et flytende begrep. Det endrer seg over tid. Det viktigste er ikke hva vi kaller det — det viktigste er å forstå hvordan arkitekturen fungerer og hva den er god til.
+Det viktige poenget: boka bruker Language AI som ramme fordi disse teknikkene jobber sammen. En moderne chatbot er ikke bare en LLM — den er LLM pluss RAG pluss embeddings pluss søk. Alt spiller sammen.
 -->
 
 ---
