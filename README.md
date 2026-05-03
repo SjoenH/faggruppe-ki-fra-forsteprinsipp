@@ -4,6 +4,27 @@ Slidev-presentasjon for den andre samlingen i faggruppen om KI fra forsteprinsip
 
 Live slides: https://sjoenH.github.io/faggruppe-ki-fra-forsteprinsipp/
 
+## Presentasjoner
+
+Dette repoet inneholder flere presentasjoner:
+
+- **`slides.md`** - Hovedpresentasjon (Kapittel 1-2: Historikk, tokens, embeddings)
+- **`slides-may4.md`** - Quiz-format for 4. mai (Kapittel 3: Looking Inside LLMs)
+
+### Kjøre en spesifikk presentasjon
+
+Standard (slides.md):
+```bash
+pnpm dev
+```
+
+May 4th quiz (slides-may4.md):
+```bash
+pnpm dev slides-may4.md
+```
+
+Åpne http://localhost:3030
+
 ## Reading plan (Ch. 3-12) - 2026
 
 Cadence and format
@@ -15,7 +36,7 @@ Cadence and format
 
 Schedule (front-loaded before summer)
 - May (2 meetings)
-  - M1: Chapter 3 - Looking Inside Large Language Models + Mini-lab
+  - M1: **May 4** - Chapter 3 - Looking Inside Large Language Models + Quiz format (`slides-may4.md`)
   - M2: Chapter 4 - Text Classification + Tool demo
 - June (2 meetings)
   - M1: Chapter 5 - Text Clustering and Topic Modeling + Mini-lab
@@ -49,7 +70,9 @@ Rediger `slides.md` for a oppdatere innholdet.
 
 ## Prosjektstruktur
 
-- `slides.md` - hovedinnhold for presentasjonen
+- `slides.md` - hovedinnhold for presentasjonen (Kapittel 1-2)
+- `slides-may4.md` - quiz-format presentasjon for 4. mai (Kapittel 3)
+- `public/images/` - bilder fra boken (Chapter 3 figures)
 - `components/` - tilpassede Vue-komponenter
 - `snippets/` - kodesnutter brukt i lysbilder
 - `pages/` - importerte slides

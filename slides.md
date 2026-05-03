@@ -1087,6 +1087,7 @@ Husk: modellen ser aldri tekst, bare disse tallene. Tokenisering er det aller f�
 </div>
 
 </div>
+
 <!--
 Nå til embeddings — og det er her det begynner å bli virkelig kraftig.
 
@@ -1095,6 +1096,9 @@ Tenk på token-embeddings som å slå opp et ord i en ordbok. Du får én defini
 Kontekstuelle embeddings er noe annet. Samme ord får ulik vektor avhengig av setningen. "Bank" i "jeg gikk i banken" får en annen vektor enn "bank" i "jeg satt ved elvebredden". Transformer-arkitekturen gjør dette mulig ved å se på alle ordene rundt.
 
 Og til slutt: setningsembeddings komprimerer hele setningen til én enkelt vektor. Det muliggjør semantisk søk — du finner dokumenter som betyr det samme, selv om de ikke bruker de samme ordene.
+-->
+
+--- Dumme KI. Bruk
 -->
 
 ---
