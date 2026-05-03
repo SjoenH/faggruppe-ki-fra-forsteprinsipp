@@ -360,6 +360,8 @@ layout: two-cols
 
 *Før vi tar pause...*
 
+::right::
+
 ### Mulige temaer:
 
 - Transformer hype vs realitet
@@ -370,12 +372,16 @@ layout: two-cols
 - Context window kappløp
 - Parameter count flexing
 
-::right::
+<!--
+Henrik's mulighet til å rant om et relevant tema før pause.
 
-<div class="mt-12 text-6xl">
+Forslag til rant-emner:
+- Transformer hype: Alle vil bruke Transformers til alt, selv når det ikke gir mening
+- Misforståelser om attention: Folk tror attention er magisk, men det er bare dot product + softmax
+- "Attention is all you need": Paperet heter det, men feedforward network er faktisk større og viktigere
+- Overengineering: Flash Attention, Grouped-Query, RoPE - hvor mye kompleksitet trenger vi egentlig?
+- Context window kappløp: 128K, 200K, 1M tokens - men hvem bruker det i praksis?
+- Parameter count flexing: Større modell = bedre? Ikke nødvendigvis...
 
-💭
-
-*[Henrik's tid å shine]*
-
-</div>
+Eller noe helt annet Henrik har på hjertet!
+-->
