@@ -351,3 +351,31 @@ layout: center
 # Takk for i dag! 🎉
 
 ### Vinner: **\_\_\_\_\_\_\_\_\_\_**
+
+---
+layout: two-cols
+---
+
+# Henrik's Rant Corner 🎤
+
+*Før vi tar pause...*
+
+### Mulige temaer:
+
+- Transformer hype vs realitet
+- Misforståelser om attention
+- "Attention is all you need" (er det?)
+- Overengineering av arkitekturer
+- Flash Attention marketing
+- Context window kappløp
+- Parameter count flexing
+
+::right::
+
+<div class="mt-12 text-6xl">
+
+💭
+
+*[Henrik's tid å shine]*
+
+</div>
