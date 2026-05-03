@@ -205,8 +205,6 @@ layout: center
 
 ## Hva forklares her?
 
-*(Attention heads)*
-
 ![](/images/holl_0317.png)
 
 <!--
@@ -263,28 +261,7 @@ Fullt autoregressiv = kan kun se bakover, ikke fremover (decoder-only).
 layout: center
 ---
 
-# Runde 14
-
-## Hva viser dette bildet? Forklar fargekodingen.
-
-![](/images/holl_0324.png)
-
-<!--
-Figure 3-24: Dette forklarer hvordan man leser attention-visualiseringer.
-- Mørkeblå celle: token som prosesseres AKKURAT NÅ
-- Lyseblå celler: tokens modellen KAN se (attend to) mens den prosesserer den mørkeblå
-- Hvite celler: tokens modellen IKKE kan se
-
-Dette viser autoregressiv natur av decoder Transformers - kan bare se BAKOVER til tidligere tokens, aldri fremover. Dette i motsetning til BERT (bidirectional) som kan se både bakover og fremover.
-
-Hver rad = én token som prosesseres.
--->
-
----
-layout: center
----
-
-# Runde 15 ⭐ Bonuspoeng
+# Runde 14 ⭐ Bonuspoeng
 
 ## Hva er forskjellen på Multi-head, Multi-query og Grouped-query attention?
 
@@ -309,7 +286,7 @@ Grouped-query reduserer minne brukt i KV cache under inferens, spesielt viktig f
 layout: center
 ---
 
-# Runde 16
+# Runde 15
 
 ## Transformer Block: Hva har endret seg fra 2017 til 2024?
 
@@ -342,7 +319,7 @@ Residual connections er fortsatt der!
 layout: center
 ---
 
-# Runde 17
+# Runde 16
 
 ## RoPE (Rotary Positional Embeddings) - når og hvorfor?
 

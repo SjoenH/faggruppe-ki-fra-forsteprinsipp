@@ -28,7 +28,7 @@ Then open: http://localhost:3030
 | Delvis god forklaring (partial) | ⭐ |
 | Vesentlig tillegg fra annen gruppe (substantial addition) | ⭐ |
 
-## Quiz Rounds (17 total)
+## Quiz Rounds (16 total)
 
 Rundene følger **bokens kronologiske rekkefølge** (Figure 3-1 → 3-33).
 
@@ -65,7 +65,7 @@ Rundene følger **bokens kronologiske rekkefølge** (Figure 3-1 → 3-33).
 ### Runde 10: Forklar bildet
 - **Figure 3-14**: Self-attention incorporating information from previous positions
 
-### Runde 11: Hva forklares her? (Attention heads)
+### Runde 11: Hva forklares her?
 - **Figure 3-17**: Multiple parallel attention heads increasing model capacity
 
 ### Runde 12: Queries, Keys, Values - forklar de tre matrisene
@@ -75,18 +75,15 @@ Rundene følger **bokens kronologiske rekkefølge** (Figure 3-1 → 3-33).
 - **Figure 3-22**: Local attention limiting context window
 - **Figure 3-23**: Full vs sparse attention patterns
 
-### Runde 14: Hva viser dette bildet? Forklar fargekodingen.
-- **Figure 3-24**: How to read attention visualization diagrams
-
-### Runde 15: Multi-head vs Multi-query vs Grouped-query? ⭐ BONUSPOENG
+### Runde 14: Multi-head vs Multi-query vs Grouped-query? ⭐ BONUSPOENG
 - **Figure 3-26**: Multi-head attention (original)
 - **Figure 3-28**: Grouped-query attention (Llama 2/3)
 
-### Runde 16: Transformer Block - 2017 vs 2024?
+### Runde 15: Transformer Block - 2017 vs 2024?
 - **Figure 3-29**: Original Transformer block (2017)
 - **Figure 3-30**: Modern Transformer block (2024 - Llama 3)
 
-### Runde 17: RoPE - når og hvorfor?
+### Runde 16: RoPE - når og hvorfor?
 - **Figure 3-32**: RoPE applied in attention step
 - **Figure 3-33**: RoPE added before relevance scoring
 
